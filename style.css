@@ -5,8 +5,13 @@ html {
     box-sizing: inherit;
   }
 
+@font-face {
+    font-family: 'poke';
+    src: url('/fonts/PokemonGb-RAeo.ttf');
+}
+
 body{
-    background-color: #f1e1a6;
+    background-color: #;
 }
 
 h1{
@@ -17,9 +22,10 @@ h1{
 }
 
 h2{
-    display:flex;
+    display:flex;                     
     justify-content: center;
-    border: 4px solid black;
+    border-top: 4px solid rgb(136, 129, 129);
+    border-bottom: 4px solid rgb(136, 129, 129);
     margin-top: 0px;
     margin-bottom: 0px;
     
@@ -29,15 +35,19 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 4px solid black;
+    font-family: poke, sans-serif;
+    font-size: smaller;
+
+
 }
 
 .scores{
     display: flex;
     flex-direction: row;
-    border: 4px dotted green;
     justify-content: center;
-}
+    background-color: #a2dae6;
+    gap: 15px;
+} 
 
 .you{
     display: flex;
@@ -119,13 +129,34 @@ button{
         bottom 50px right 50px; */
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
-    background-size: 18% 115%;
-    padding-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: flex;
+    background-size: 105% 100%;
+    padding: 15px;
+    margin: 25px 5px;  
+    display: inline-flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    /* align-self: center; */
+    font-family: poke, sans-serif;
+    font-size: 70%;
+
    
 }
 
+.dialogueBox{
+    display: flex;
+    justify-content: center;
+}
+
+#makeSelection {
+     background-color: #EFFCD5;
+     padding: 10px; 
+     font-family: poke, sans-serif;
+     font-size: medium; 
+}
+
+#keepScore{
+    background-color: #c6f7d6;
+     padding: 10px; 
+     font-family: poke, sans-serif;
+     font-size: medium; 
+}
