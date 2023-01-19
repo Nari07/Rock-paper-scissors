@@ -18,6 +18,7 @@ let rem1 = document.getElementById('remove1');
 let rem2 = document.getElementById('remove2');
 let rem3 = document.getElementById('remove3');
 let btns = document.getElementById('btns');
+let diag = document.getElementById('dialogueBox')
 
 function disable(){
   //  squirtle.style.visibility='hidden';
@@ -46,13 +47,37 @@ function enable(){
   snorToRemove.remove();
 }
 
-function playRound(e){
-   let playerSelection =  event.target.id;
-   let computerSelection = getComputerChoice();
+window.onload = function hide(){
+  diag.style.display='none';
+};
 
-   choice.textContent = 'Computer\'s choice is ' + computerSelection + ' .';
- 
-   if (computerSelection === playerSelection) {
+
+function playRound(e){
+  
+
+  let playerSelection =  event.target.id;
+  let computerSelection = getComputerChoice();
+  
+  if (diag.style.display === 'none'){
+    diag.style.display = 'flex';
+  }
+  choice.textContent = 'Computer\'s choice is ' + computerSelection + ' .';
+  
+  let currPokemon = document.getElementById(playerSelection);
+  currPokemon.style.filter = 'grayscale(85%)';
+
+  if (char === currPokemon){
+    bulb.style.filter = 'grayscale(0%)';
+    squirtle.style.filter = 'grayscale(0%)';
+  } else if (bulb === currPokemon){
+    char.style.filter = 'grayscale(0%)';
+    squirtle.style.filter = 'grayscale(0%)';
+  } else {
+    char.style.filter = 'grayscale(0%)';
+    bulb.style.filter = 'grayscale(0%)';
+  }
+
+  if (computerSelection === playerSelection) {
      result.textContent = ('It\'s a tie!');
      
   } else if (playerSelection === 'squirtle' && computerSelection === 'bulbasaur'){
