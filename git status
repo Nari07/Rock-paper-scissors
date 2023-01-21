@@ -1,0 +1,47 @@
+[33mcommit 0592d5cbf7ca3023c1006f77473c42b996e0795e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: Nari07 <mickinguyen12@gmail.com>
+Date:   Wed Jan 18 21:55:25 2023 -0600
+
+    add margins to score section
+
+[33mcommit 9c1c16163e3cd25fea071f0989d47aaacd9e39fe[m
+Author: Nari07 <mickinguyen12@gmail.com>
+Date:   Wed Jan 18 21:48:10 2023 -0600
+
+    add grayscale to images upon click; change button to be less obnoxious;
+
+[33mcommit ea75398ad17c1121936c7edc4954aac565ccfc86[m
+Author: Nari07 <mickinguyen12@gmail.com>
+Date:   Wed Jan 18 16:07:37 2023 -0600
+
+    update readme
+
+[33mcommit fc73eb63cd9c7d9a4863d732a0076246eafea7bd[m
+Author: Nari07 <mickinguyen12@gmail.com>
+Date:   Tue Jan 17 23:13:01 2023 -0600
+
+    add dialogue box
+
+[33mcommit 04d1a1feb3f6e32ebd76370d4bdd6770c631465d[m
+Author: Nari07 <mickinguyen12@gmail.com>
+Date:   Tue Jan 17 22:04:33 2023 -0600
+
+    add ui and remove console.log parts
+
+[33mcommit 8f95928818bb7c53b5c3a81f14b2fd0b85491815[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Nari07 <mickinguyen12@gmail.com>
+Date:   Sun Dec 4 02:13:51 2022 -0600
+
+    add the rest
+
+[33mcommit 4402a49ba1fc52bd4eb6b6bbf0767069facfca5c[m
+Author: Nari07 <mickinguyen12@gmail.com>
+Date:   Sat Nov 5 01:32:22 2022 -0500
+
+    add HTML file, add js file with first round of RPS, modify README
+
+[33mcommit de143cec7dadf17cdeee8bae430721b1e23d1385[m
+Author: Nari07 <110013628+Nari07@users.noreply.github.com>
+Date:   Sat Nov 5 01:08:29 2022 -0500
+
+    Initial commit
