@@ -16,6 +16,10 @@ html {
          url('pokemongb-raeo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 } */
 
 body{
@@ -195,8 +199,11 @@ button{
      font-family: poke, sans-serif;
      font-size: medium; 
 }
+<<<<<<< HEAD
 
 #snorlaxPic{
     width: 109%;
     height: 125%;
 }
+=======
+>>>>>>> origin/main
