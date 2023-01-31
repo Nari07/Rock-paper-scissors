@@ -18,6 +18,7 @@ let rem1 = document.getElementById('remove1');
 let rem2 = document.getElementById('remove2');
 let rem3 = document.getElementById('remove3');
 let btns = document.getElementById('btns');
+let diag = document.getElementById('dialogueBox')
 
 function disable(){
   //  squirtle.style.visibility='hidden';
@@ -30,8 +31,8 @@ function disable(){
   char.remove();
   let snor = document.createElement('p');
   snor.setAttribute('id', 'snorlax');
-  snor.innerHTML = ('<img src = "https://cdn.donmai.us/original/d2/d3/d2d3b295643cbb1a8948dc23ee3d9ae1.gif"/>');
-  rem1.appendChild(snor);
+  snor.innerHTML = ('<img src= "https://media1.giphy.com/media/n2ytlxNQLodGM/200w.gif?cid=6c09b952pcop8mv359nwzrwfdcpcxs1j53esg4m45bdj3y4f&rid=200w.gif&ct=s" id = "snorlaxPic"/>');
+  rem2.appendChild(snor);
    
 }
 
@@ -46,13 +47,37 @@ function enable(){
   snorToRemove.remove();
 }
 
-function playRound(e){
-   let playerSelection =  event.target.id;
-   let computerSelection = getComputerChoice();
+window.onload = function hide(){
+  diag.style.display='none';
+};
 
-   choice.textContent = 'Computer\'s choice is ' + computerSelection + ' .';
- 
-   if (computerSelection === playerSelection) {
+
+function playRound(e){
+  
+
+  let playerSelection =  event.target.id;
+  let computerSelection = getComputerChoice();
+  
+  if (diag.style.display === 'none'){
+    diag.style.display = 'flex';
+  }
+  choice.textContent = 'Computer\'s choice is ' + computerSelection + ' .';
+  
+  let currPokemon = document.getElementById(playerSelection);
+  currPokemon.style.filter = 'grayscale(85%)';
+
+  if (char === currPokemon){
+    bulb.style.filter = 'grayscale(0%)';
+    squirtle.style.filter = 'grayscale(0%)';
+  } else if (bulb === currPokemon){
+    char.style.filter = 'grayscale(0%)';
+    squirtle.style.filter = 'grayscale(0%)';
+  } else {
+    char.style.filter = 'grayscale(0%)';
+    bulb.style.filter = 'grayscale(0%)';
+  }
+
+  if (computerSelection === playerSelection) {
      result.textContent = ('It\'s a tie!');
      
   } else if (playerSelection === 'squirtle' && computerSelection === 'bulbasaur'){
@@ -162,4 +187,3 @@ document.getElementById('charmander').addEventListener('click', playRound);
 /* function endGame(){
   if 
 } */
-
