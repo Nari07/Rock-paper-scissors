@@ -31,7 +31,7 @@ function disable(){
   char.remove();
   let snor = document.createElement('p');
   snor.setAttribute('id', 'snorlax');
-  snor.innerHTML = ('<img src= "https://media1.giphy.com/media/n2ytlxNQLodGM/200w.gif?cid=6c09b952pcop8mv359nwzrwfdcpcxs1j53esg4m45bdj3y4f&rid=200w.gif&ct=s" id = "snorlaxPic"/>');
+  snor.innerHTML = ('<img src= "images/snorlax.gif" id = "snorlaxPic"/>');
   rem2.appendChild(snor);
    
 }
